@@ -1,4 +1,4 @@
-# Problem 1: Maximum of three using if-elif-else
+# Problem 1
 def max_of_three(a, b, c):
     if a >= b and a >= c:
         return a
@@ -8,9 +8,9 @@ def max_of_three(a, b, c):
         return c
 
 
-# Problem 2: Digit count and digit sum
+# Problem 2
 def digit_count_and_sum(n):
-    n = abs(n)  # handle negative numbers
+    n = abs(n)  
     if n == 0:
         return 1, 0
 
@@ -26,17 +26,16 @@ def digit_count_and_sum(n):
     return count, digit_sum
 
 
-# Problem 3: Bubble sort + Binary search
+# Problem 3
 def binary_search_with_bubble_sort(arr, target):
     n = len(arr)
 
-    # Bubble sort
+   
     for i in range(n - 1):
         for j in range(n - i - 1):
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
-    # Binary search
     left = 0
     right = n - 1
 
@@ -52,7 +51,7 @@ def binary_search_with_bubble_sort(arr, target):
     return -1
 
 
-# ---------------- MAIN PROGRAM ----------------
+
 
 # Problem 1
 a, b, c = map(int, input("Enter three integers: ").split())
